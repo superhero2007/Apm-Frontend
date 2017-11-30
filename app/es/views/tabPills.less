@@ -1,0 +1,34 @@
+@purpleBorder-color: #c79eca;
+
+.purpleButton() {
+
+  border: 1px solid @purpleBorder-color;
+  border-radius: 0 !important;
+  color: #7E1C86;
+}
+
+.purpleButtonHover() {
+  background-color: rgba(218, 191, 220, 0.4) !important;
+  color: black !important;
+}
+
+.purpleButtonActive() {
+  background-color: #dabfdc !important;
+  color: black !important;
+}
+
+.dsPillTab {
+  a {
+    .purpleButton();
+    margin-left: 5px;
+
+    &:focus, &:hover {
+      .purpleButtonHover();
+    }
+  }
+
+  &.active a {
+    .purpleButtonActive();
+  }
+}
+

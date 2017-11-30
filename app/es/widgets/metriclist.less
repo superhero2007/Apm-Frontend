@@ -1,0 +1,54 @@
+.txnListBar {
+
+  height: 28px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  background-color: #F3F3F2;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0px;
+  cursor: pointer;
+  position: relative;
+
+  .progress-bar {
+    font-size: 15px;
+    color: #2E1F1F;
+    text-align: left;
+    background-color: rgba(253, 188, 96, 0.94);
+
+  }
+
+  .txnName {
+    top: 3px;
+    left: 10px;
+    position: absolute;
+    //z-index: 5;
+  }
+
+  &:hover {
+    background-color: #E6E6E6;
+    .progress-bar {
+      background-color: rgba(226, 169, 86, 0.94);
+    }
+  }
+
+  &.active {
+    background-color: #D1C4A7;
+    .progress-bar {
+      background-color: rgba(233, 101, 27, 0.94);
+    }
+    .txnName {
+      font-weight: bold;
+    }
+    .unit {
+      font-weight: bold;
+    }
+  }
+
+  .unit {
+    position: absolute;
+    padding-top: 3px;
+    //z-index: 20;
+    right: 5px;
+  }
+}
